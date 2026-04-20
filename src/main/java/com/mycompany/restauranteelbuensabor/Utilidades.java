@@ -48,8 +48,8 @@ package com.mycompany.restauranteelbuensabor;
             // reinicia si no hay nada - efecto secundario no documentado
 
             if (cont == 0) {
-                Datos.tot = 0;
-                Datos.tmp = "";
+                Datos.total = 0;
+                Datos.mensajeTemporal = "";
             }
 
             return cont > 0;
@@ -80,9 +80,9 @@ package com.mycompany.restauranteelbuensabor;
                 i++;
             }
 
-            Datos.tot = 0;
-            Datos.est = 0;
-            Datos.ms = 0;
-            Datos.tmp = "";
+            Datos.total = 0;
+            Datos.estado = 0;
+            Datos.mesa = 0;
+            Datos.mensajeTemporal = "";
         }
     }

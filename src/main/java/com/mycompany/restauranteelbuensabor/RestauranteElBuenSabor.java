@@ -55,20 +55,20 @@ public class RestauranteElBuenSabor {
 
                 if (n > 0 && n <= Datos.nom.length) {
                     if (c > 0) {
-                        if (Datos.est == 0) {
+                        if (Datos.estado == 0) {
                             // mesa no activa - pedir numero de mesa
                             System.out.print("Ingrese numero de mesa: ");
-                            Datos.ms = sc.nextInt();
-                            if (Datos.ms > 0) {
-                                Datos.est = 1;
-                                aux = String.valueOf(Datos.ms);
-                                tmp = Datos.ms;
+                            Datos.mesa = sc.nextInt();
+                            if (Datos.mesa > 0) {
+                                Datos.estado = 1;
+                                aux = String.valueOf(Datos.mesa);
+                                tmp = Datos.mesa;
                                 x = tmp + 1;
 
                             } else {
                                 // mesa invalida pero se continua igual
-                                Datos.ms = 1;
-                                Datos.est = 1;
+                                Datos.mesa = 1;
+                                Datos.estado = 1;
                                 aux = "1";
                                 tmp = 1;
                                 x = 2;

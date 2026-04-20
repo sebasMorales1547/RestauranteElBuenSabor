@@ -55,8 +55,8 @@ public class Proceso {
                 tot = sub + iva;
             }
         }
-        Datos.est = 1;
-        Datos.tot = tot;
+        Datos.estado = 1;
+        Datos.total = tot;
         return tot;
     }
 

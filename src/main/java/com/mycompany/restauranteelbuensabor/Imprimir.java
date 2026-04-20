@@ -83,7 +83,7 @@ public class Imprimir {
         System.out.println("    Calle 15 #8-32, Valledupar");
         System.out.println("    NIT: 900.123.456-7");
         System.out.println(sep);
-        System.out.printf("FACTURA No. %03d%n", Datos.nf);
+        System.out.printf("FACTURA No. %03d%n", Datos.numeroFactura);
         System.out.println("----------------------------------------");
         // imprime cada item del pedido
         int j = 0;
@@ -108,9 +108,9 @@ public class Imprimir {
         System.out.println("El Buen Sabor - Valledupar");
         System.out.println(sep);
         // actualiza estado e incrementa factura - tres responsabilidades en un metodo
-        Datos.nf = Datos.nf + 1;
-        Datos.est = 0;
-        Datos.tot = tot;
+        Datos.numeroFactura = Datos.numeroFactura + 1;
+        Datos.estado = 0;
+        Datos.total = tot;
     }
 
     public static void imprimirFacturaResumen() {
@@ -154,7 +154,7 @@ public class Imprimir {
         System.out.println("    Calle 15 #8-32, Valledupar");
         System.out.println("    NIT: 900.123.456-7");
         System.out.println(sep);
-        System.out.printf("FACTURA No. %03d (RESUMEN)%n", Datos.nf);
+        System.out.printf("FACTURA No. %03d (RESUMEN)%n", Datos.numeroFactura);
         System.out.println("----------------------------------------");
         System.out.printf("%-27s $%,.0f%n", "Subtotal:", aux);
         System.out.printf("%-27s $%,.0f%n", "IVA (19%):", iva);
