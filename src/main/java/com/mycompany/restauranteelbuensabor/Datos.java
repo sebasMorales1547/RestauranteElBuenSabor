@@ -35,5 +35,5 @@ public class Datos {
     public static int numeroFactura = 1;
     public static String nombreRestaurante = "El Buen Sabor";
     public static String mensajeTemporal = "";
-    
+
 }
